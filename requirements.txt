@@ -3,11 +3,18 @@ langchain==0.3.11
 unstructured==0.14.4 # Document loading
 # onnxruntime==1.17.1 # chromadb dependency: on Mac use `conda install onnxruntime -c conda-forge`
 # For Windows users, install Microsoft Visual C++ Build Tools first
+# For ARM based machines:
+#   sudo apt update && sudo apt upgrade -y
+#   sudo apt install build-essential g++ -y
+#   g++ --version
+#   gcc --version
+#   pip install -r requirements.txt
 # install onnxruntime before installing `chromadb`
 chromadb==0.5.0 # Vector storage
 openai==1.57.3 # For embeddings
 tiktoken==0.7.0  # For embeddings 
 langchain-openai>=0.1.0
 langchain-chroma>=0.1.0
+langchain-community>=0.3.12
 
 # install markdown depenendies with: `pip install "unstructured[md]"` after install the requirements file. Leave this line commented out. 
